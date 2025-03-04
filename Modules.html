@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+ <link rel="stylesheet" href="styles.css">
+ <title>Modules</title>
+<style>
+   /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+       font-family: 'Arial', serif;
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #D97787;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+    header h1 {
+      font-size: 2.5em;
+    }
+    header p {
+      font-size: 1.2em;
+    }
+
+    /* Navigation */
+    nav {
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #D97787;
+      margin: 0 15px;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #000000;
+    }
+
+    /* Sections */
+    section {
+      padding: 50px 20px;
+    }
+    .intro {
+      font-style: none;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .intro h2 {
+      color: #D97787;
+      margin-bottom: 20px;
+    }
+
+    /* Modules Section */
+    .modules {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .module {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .module img {
+      max-width: 50%;
+      height: 50;
+      border-radius: 8px;
+    }
+    .module h3 {
+      margin: 15px 0;
+      color: #D97787;
+    }
+    .module p {
+      margin: 10px 0;
+      color: #666;
+    }
+    .module a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #D97787;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .module a:hover {
+      background: #D97787;
+    }
+
+    /* Contact Section */
+    .contact form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .contact form input, .contact form textarea, .contact form button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .contact form button {
+      background: #D97787;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .contact form button:hover {
+      background: #000000;
+
+
+    }
+    
+
+    /* Games Section */
+    games form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .games form input, .games form textarea, .games form button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .games form button {
+      background: #D97787;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .games form button:hover {
+      background: #000000;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+</style>
+<head>
+<body>
+    <header>
+    <h1>Taal Senior High School Research Learning</h1>
+    <p>Learn, Explore, and Achieve Excellence in Research</p>
+  </header>
+  <!-- Navigation -->
+  <nav>
+   <li><a href="#index.html">Home</a></li>
+                <li><a href="#module.html">Modules</a></li>
+                <li><a href="#aboutt.html">About</a></li>
+                <a href="game.html">Game</a>
+  </nav>
+<!-- Modules Section -->
+  <section class="modules">
+        <h2>Modules</h2>
+        <div class="module-list">
+            <div class="module-card">
+                <h3>Module 1</h3>
+                <p>Introduction to Research</p>
+                <button onclick="openGame(1)">Play Game</button>
+            </div>
+            <div class="module-card">
+                <h3>Module 2</h3>
+                <p>Research Methods</p>
+                <button onclick="openGame(2)">Play Game</button>
+            </div>
+            <div class="module-card">
+                <h3>Module 3</h3>
+                <p>Data Collection</p>
+                <button onclick="openGame(3)">Play Game</button>
+            </div>
+        </div>
+    </section>
+</header>
+
+<!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Senior High Research Modules. All rights reserved.</p>
+  </footer>
+</body>
+</head>
+

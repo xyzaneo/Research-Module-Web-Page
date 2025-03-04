@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module</title>
+    <link rel="stylesheet" href="cssstyle.css">
+    <script defer src="js.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+     <section class="modules">
+        <h2>Modules</h2>
+        <div class="module-list">
+            <div class="module-card">
+                <h3>Module 1</h3>
+                <p>Introduction to Research</p>
+                <button onclick="window.location.href='APPLIED-PRACTICAL-RESEARCH-1_Q1_Mod1-V2.pdf'">Click here</button>
+            </div>
+            <div class="module-card">
+                <h3>Module 2</h3>
+                <p>Research Methods</p>
+                <button onclick="window.location.href='APPLIED-PRACTICAL-RESEARCH-1_Q1_Mod1-V2.pdf'">Click here</button>
+            </div>
+            <div class="module-card">
+                <h3>Module 3</h3>
+                <p>Data Collection</p>
+                <button onclick="window.location.href='APPLIED-PRACTICAL-RESEARCH-1_Q1_Mod1-V2.pdf'">Click here</button>
+            </div>
+            <div class="module-card">
+                <h3>Module 4</h3>
+                <p>Data Collection</p>
+                <button onclick="window.location.href='APPLIED-PRACTICAL-RESEARCH-1_Q1_Mod1-V2.pdf'">Click here</button>
+            </div>
+            <div class="module-card">
+                <h3>Module 5</h3>
+                <p>Data Collection</p>
+                <button onclick="window.location.href='APPLIED-PRACTICAL-RESEARCH-1_Q1_Mod1-V2.pdf'">Click here</button>
+            </div>
+            <div class="module-card">
+                <h3>Module 6</h3>
+                <p>Data Collection</p>
+                <button onclick="window.location.href='APPLIED-PRACTICAL-RESEARCH-1_Q1_Mod1-V2.pdf'">Click here</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="modules">
+        <h2>Modules</h2>
+        <div class="module-list">
+            <div class="module-card">
+                <h3>Module 1</h3>
+                <p>Introduction to Research</p>
+                <button onclick="openGame(1)">Play Game</button>
+                <a href = "APPLIED-PRACTICAL-RESEARCH-1_Q1_Mod1-V2"></a>
+            </div>
+            <div class="module-card">
+                <h3>Module 2</h3>
+                <p>Research Methods</p>
+                <button onclick="openGame(2)">Play Game</button>
+            </div>
+            <div class="module-card">
+                <h3>Module 3</h3>
+                <p>Data Collection</p>
+                <button onclick="openGame(3)">Play Game</button>
+            </div>
+        </div>
+    </section>
+
+   <div id="game-popup" class="popup">
+        <div class="popup-content">
+            <h3>Module Game</h3>
+            <p>Answer the following questions:</p>
+            <input type="text" id="answer" placeholder="Type your answer here">
+            <button onclick="submitAnswer()">Submit</button>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+
+    <script src="js.js"></script>
+</body>
+</html>
